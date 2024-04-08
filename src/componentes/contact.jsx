@@ -1,6 +1,13 @@
 export function Contact() {
   return (
-    <div id="contact" className="bg-hexagon2 p-28">
+    <div id="contact" className=" ">
+       <div style={{
+                backgroundImage: 'linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url(/common-bg.svg)',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                height: '100vh',
+                padding: '1.5rem 8rem', // Agrega el padding al contenedor principal
+            }}>
     <div className="container mx-auto text-center">
         <div className="projects ">
         <h2 className="text-center text-5xl mb-5 font-bold ">CONTACT</h2>
@@ -33,6 +40,7 @@ export function Contact() {
                 </form>
             </div>
         </div>
+    </div>
     </div>
 </div>
   );

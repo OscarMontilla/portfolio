@@ -27,13 +27,7 @@ function App() {
         <Projects />
       </div>
       <div
-  style={{
-    backgroundImage: 'linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url(/common-bg.svg)',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    
-    padding: '1.5rem 8rem', // Agrega el padding al contenedor principal
-  }}
+  
 >
         <Contact></Contact>
       </div>
