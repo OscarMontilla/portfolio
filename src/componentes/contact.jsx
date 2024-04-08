@@ -1,72 +1,39 @@
 export function Contact() {
   return (
-    <div className="contact container mx-auto p-4">
-      
-      <h2 className="text-center text-5xl font-bold mb-6">CONTACT</h2>
-      <div className="flex justify-center items-center mb-6">
-      <div className=" text-xl border-b-8 border-purple-600 w-10 mx-auto rounded-full mt-1"></div>
-      </div>
-      <p className="text-center text-xl ">
-      Feel free to Contact me by submitting the form below and I will get back to you as soon as <br /> possible
-      </p>
-      <div className="bg-white shadow-lg p-16 mt-24 mx-auto max-w-4xl text-left rounded-md">
-        <form action="#" className="contact__form" method="post">
-          <input type="hidden" name="form-name" value="form 1" />
-
-          <div className="mb-8">
-            <label htmlFor="name" className="block text-gray-700 font-bold mb-2">
-              Name
-            </label>
-            <input
-              required
-              placeholder="Enter Your Name"
-              type="text"
-              className="w-full p-7 leading-tight border border-gray-300 rounded appearance-none bg-gray-100  text-gray-700 font-semibold"
-              name="name"
-              id="name"
-            />
-          </div>
-
-          <div className="mb-8">
-            <label htmlFor="email" className="block text-gray-700 font-bold mb-2">
-              Email
-            </label>
-            <input
-              required
-              placeholder="Enter Your Email"
-              type="email"
-              className="p-7 w-full px-3 leading-tight border border-gray-300 rounded bg-gray-100  text-gray-700 font-semibold"
-              name="email"
-              id="email"
-            />
-          </div>
-
-          <div className="mb-8">
-            <label htmlFor="message" className="block text-gray-700 font-bold mb-2">
-              Message
-            </label>
-            <textarea
-              required
-              cols="30"
-              rows="10"
-              className="w-full px-3 py-2 leading-tight border border-gray-300 rounded bg-gray-100 text-gray-700 font-semibold"
-              placeholder="Enter Your Message"
-              name="message"
-              id="message"
-            ></textarea>
-          </div>
-
-          <div className="flex justify-end">
-  <button
-    className="py-5 px-14 mt-4 font-bold text-white bg-purple-600 rounded-md shadow-md"
-  >
-    SUBMIT
-  </button>
-</div>
-
-
-        </form>
-      </div>
+    <div id="contact" className="bg-hexagon2 p-28">
+    <div className="container mx-auto text-center">
+        <div className="projects ">
+        <h2 className="text-center text-5xl mb-5 font-bold ">CONTACT</h2>
+            <div className=" text-xl border-b-8 border-purple-600 w-10 mx-auto rounded-full mt-3 mb-2"></div>
+            <div className="text-center text-xl text-gray-700 mb-14">
+                <p>Feel free to Contact me by submitting the form below and I will get back to you as soon as </p>
+                <p>possible</p>
+            </div>
+        </div>
+        <div className="container mx-auto bg-white rounded-md shadow-lg w-7/12 m-10">
+            <div className="p-8">
+                <form className="mt-4">
+                    <div className="mb-10">
+                        <label className="block text-gray-500 text-base font-bold mb-2 text-start" htmlFor="name">Name</label>
+                        <input className="appearance-none border rounded w-full p-5 bg-gray-100 text-gray-800 font-semibold leading-tight focus:outline-none " id="name" type="text" placeholder="Enter Your Name" />
+                    </div>
+                    <div className="mb-10">
+                        <label className="block text-gray-500 text-base font-bold mb-2 text-start" htmlFor="email">Email</label>
+                        <input className="appearance-none border rounded w-full p-5 bg-gray-100 text-gray-800 font-semibold leading-tight focus:outline-none " id="email" type="email" placeholder="Enter your Email" />
+                    </div>
+                    <div className="mb-10">
+                        <label className="block text-gray-500 text-base font-bold mb-2 text-start" htmlFor="message">Message</label>
+                        <textarea className="appearance-none border rounded w-full p-5 bg-gray-100 text-gray-800 font-semibold leading-tight h-56 focus:outline-none " id="message" placeholder="Enter Your Message"></textarea>
+                    </div>
+                    <div className="flex items-center justify-end">
+                        <button className="bg-violet-600 my-3 py-4 px-12 rounded-md uppercase text-white font-bold text-base shadow-xl tracking-wider w-48" type="button">
+                           Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
+</div>
   );
 }
